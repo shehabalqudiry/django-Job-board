@@ -39,11 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # My Apps
+
     'job',
+    'accounts',
     'blog',
     'home',
     'contact',
-    'accounts',
     # Libs
     "bootstrap4",
 ]
