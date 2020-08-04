@@ -15,16 +15,12 @@
     {% endif %}
   {% endif %}
   
-  <form class="col-lg-4 mx-auto" method="post" action="{% url 'login' %}">
+  <form class="col-lg-6 mx-auto" method="post" action="{% url 'login' %}">
     {% csrf_token %}
     {% bootstrap_form form %}
     {% buttons %}
-        <button class="boxed-btn3 w-100" type="submit">Login</button>
-    {% endbuttons %}   
-    <input type="hidden" name="next" value="{{ next }}" />
-    <p><a href="{% url 'password_reset' %}">Lost password?</a></p>
+        <button class="boxed-btn3 w-100" type="submit">Sign Up</button>
+    {% endbuttons %}
   </form>
-  
-  {# Assumes you setup the password_reset view in your URLconf #}
-  
+
 {% endblock %}
