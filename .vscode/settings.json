@@ -1,0 +1,5 @@
+{
+    "search.seedOnFocus": true,
+    "workbench.view.alwaysShowHeaderActions": true,
+    "editor.renderLineHighlightOnlyWhenFocus": true
+}
