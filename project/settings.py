@@ -41,12 +41,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # My Apps
 
+    'django_filters',
     'job',
     'blog',
     'home',
     'contact',
     # Libs
-    "bootstrap4",
+    'bootstrap4',
 ]
 
 MIDDLEWARE = [
