@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # My Apps
 
+    'rest_framework',
     'django_filters',
     'job',
     'blog',
@@ -137,3 +138,12 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+
+# Mail Service 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'omran.tech.eg@gmail.com'
+EMAIL_HOST_PASSWORD = 'efchunnytxerrqrq'
+EMAIL_USE_TLS = True
+EMAIL_PORT = '587'
